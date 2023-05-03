@@ -51,9 +51,11 @@ a {
 }
 .profile-picture {
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     height: 2.5rem;
     width: 2.5rem;
+    background-image: url(5.jpg);
+    background-size: contain;
 }
 textarea {
     border: none;
