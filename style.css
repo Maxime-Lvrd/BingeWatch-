@@ -1,0 +1,56 @@
+.container-fluid, .row {
+    width: 100%;
+    margin: 0;
+}
+.nav {
+    font-size: 1.5rem;
+}
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+.fa-solid, .fa-regular {
+    color: black;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+li {
+    list-style-type: none;
+}
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-family: 'Vina Sans', cursive;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.nav-link {
+    padding-left: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.line {
+    border-radius: 50%;
+    border: 0.5px solid rgb(112, 112, 112);
+}
+.profile-picture {
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+textarea {
+    border: none;
+    resize: none;
+    width: 100%;
+}
+textarea:focus {
+    outline: none;
+}
+.story {
+    border: 1px solid black;
+    height: 7rem;
+}
