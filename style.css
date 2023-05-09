@@ -74,6 +74,28 @@ textarea:focus {
     padding: 0.5px;
 }
 .post {
-    border: 1px solid black;
-    height: 7rem;
+    height: auto;
+    box-shadow: 0 1px 5px 0 black
+}
+.pseudo {
+    background-color: rgba(110, 132, 141, 0.6);
+}
+.pseudo div a {
+    color: white;
+    margin: 0;
+    padding-left: 5px;
+    text-shadow: 0 1px 0 black;
+}
+.post-text p {
+    font-size: 0.8rem;
+    margin: 5px 0;
+    text-align: justify;
+}
+.hour {
+    color: white;
+    text-shadow: 0 1px 0 black;
+    margin: 0;
+    padding-right: 5px;
+    text-align: end;
+    font-size: 0.8rem;
 }
