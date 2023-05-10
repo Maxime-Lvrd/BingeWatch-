@@ -75,10 +75,10 @@ textarea:focus {
 }
 .post {
     height: auto;
-    box-shadow: 0 1px 5px 0 black
+    border: 1px solid black;
 }
 .pseudo {
-    background-color: rgba(110, 132, 141, 0.6);
+    background-color: black;
 }
 .pseudo div a {
     color: white;
@@ -99,3 +99,16 @@ textarea:focus {
     text-align: end;
     font-size: 0.8rem;
 }
+.news {
+    display: none;
+}
+.news-item {
+    height: 10rem;
+    padding: 0.5px;
+}
+
+@media (min-width: 992px) { 
+    .news {
+        display: block;
+    }
+ }
