@@ -162,6 +162,14 @@ textarea:focus {
     text-align: end;
     font-size: 0.8rem;
 }
+.fa-heart:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.like {
+    display: none;
+    color: brown;
+}
 .news {
     display: none;
 }

@@ -17,3 +17,17 @@ signUp.addEventListener("click", function () {
     connexion.style.display = "none";
     inscription.style.display = "block";
 });
+
+// like - dislike 
+const like = document.querySelector(".like");
+const dislike = document.querySelector(".dislike");
+
+like.addEventListener("click", function () {
+    dislike.style.display = "block";
+    like.style.display = "none";
+});
+
+dislike.addEventListener("click", function () {
+    dislike.style.display = "none";
+    like.style.display = "block";
+});
