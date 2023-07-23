@@ -35,8 +35,17 @@ h1 {
 h1:hover {
     transform: scale(1.1);
 }
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-family: 'Vina Sans', cursive;
+}
 h3 {
     font-size: 1.5rem;
+    font-family: 'Vina Sans', cursive;
+}
+h4 {
+    font-size: 1rem;
     font-family: 'Vina Sans', cursive;
 }
 a {
@@ -53,8 +62,45 @@ a {
     padding-bottom: 0;
 }
 .line {
-    border-radius: 50%;
-    border: 0.5px solid rgb(112, 112, 112);
+    border: solid black;
+    border-width: 0 0 1px 0;
+}
+.modal-content {
+    border-radius: 0;
+}
+.log-in, .sign-up {
+    cursor: pointer;
+}
+.inscription {
+    display: none;
+}
+.log-in {
+    border-bottom: 1px solid black;
+}
+.connexion form p {
+    background-color: rgb(244, 244, 244);
+}
+.inscription form p {
+    background-color: rgb(244, 244, 244);
+}
+.form-control {
+    border-radius: 0;
+}
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid black;
+}
+.btn-login {
+    color: white;
+    background-color: black;
+    border-radius: 0;
+}
+.btn-login:hover {
+    color: white;
+    background-color: rgb(46, 46, 46)
+}
+.publish {
+    background-color: rgba(128, 128, 128, 0.05);
 }
 .profile-picture {
     border-radius: 50%;
@@ -67,22 +113,28 @@ a {
 textarea {
     border: none;
     resize: none;
+    height: 2em;
     width: 100%;
 }
 textarea:focus {
     outline: none;
+    height: 4em;
+}
+.fa-check {
+    color: green;
 }
 .story {
-    border: 2px solid;
-    border-image-slice: 1;
-    border-width: 2px;
-    border-image-source: linear-gradient(to left, #3a7dd5, #36c1b1, #3ad580);
-    height: 7rem;
-    padding: 0.5px;
+    border-radius: 50%;
+    border: 2px solid seagreen;
+    height: 4.5rem;
+    padding: 2px;
 }
 .story:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+.story img {
+    border-radius: 50%;
 }
 .post {
     height: auto;
@@ -130,6 +182,9 @@ footer {
 }
 
 @media (min-width: 992px) { 
+    .story {
+        height: 7rem;
+    }
     .news {
         display: block;
     }
