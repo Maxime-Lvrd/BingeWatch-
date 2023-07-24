@@ -114,8 +114,10 @@ a {
     border: 1px solid rgb(255, 255, 255);
     height: 2.5rem;
     width: 2.5rem;
-    background-image: url(5.jpg);
-    background-size: contain;
+    background-image: url(perceval.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 textarea {
     border: none;
@@ -163,13 +165,9 @@ textarea:focus {
 }
 .hour {
     color: white;
-    text-shadow: 0 1px 0 black;
-    margin: 0;
-    padding-right: 5px;
-    text-align: end;
     font-size: 0.8rem;
 }
-.fa-heart:hover, .fa-share-from-square:hover, .fa-comment:hover {
+.like:hover, .dislike:hover, .comment:hover, .no-comment:hover, .share:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -193,6 +191,26 @@ textarea:focus {
     font-size: 0.8rem;
     margin: 5px 0;
     text-align: justify;
+}
+.friend-picture {
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    height: 4rem;
+    width: 4rem;
+    background-image: url(arthur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.friend-picture-1 {
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    height: 4rem;
+    width: 4rem;
+    background-image: url(merlin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .friend-comment {
     border: 1px solid black;
@@ -248,5 +266,9 @@ footer {
     .carousel-control-prev,
     .carousel-control-next {
         width: 8%;
+    }
+    .friend-picture, .friend-picture-1 {
+        height: 2.5rem;
+        width: 2.5rem;
     }
  }
