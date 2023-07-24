@@ -48,3 +48,26 @@ comment.addEventListener("click", function () {
     comments.style.display = "none";
     noComment.style.display = "block";
 });
+
+// home page
+const seeCoPage = document.querySelector(".see-co-page");
+const seeHomePage = document.querySelector(".see-home-page");
+const kezako = document.querySelector(".kezako");
+const coPage = document.querySelector(".co-page");
+const voirPage = document.querySelector(".voir-page");
+const voirPageCo = document.querySelector(".voir-page-co");
+
+seeCoPage.addEventListener("click", function () {
+    coPage.style.display = "block";
+    voirPage.style.display = "none";
+    voirPageCo.style.display = "block";
+    kezako.style.display = "none";
+});
+
+seeHomePage.addEventListener("click", function () {
+    coPage.style.display = "none";
+    voirPage.style.display = "block";
+    voirPageCo.style.display = "none";
+    kezako.style.display = "block";
+});
+

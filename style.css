@@ -48,6 +48,12 @@ h4 {
     font-size: 1rem;
     font-family: 'Vina Sans', cursive;
 }
+h5 {
+    font-size: 2rem;
+    font-family: 'Vina Sans', cursive;
+    background-color: black;
+    color: white;
+}
 a {
     text-decoration: none;
     color: black;
@@ -105,6 +111,13 @@ a {
 }
 .modal-footer div a:hover {
     color: rgb(81, 175, 164);
+}
+.kezako {
+    border: 1px solid black;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 .publish {
     background-color: rgba(128, 128, 128, 0.05);
@@ -167,7 +180,7 @@ textarea:focus {
     color: white;
     font-size: 0.8rem;
 }
-.like:hover, .dislike:hover, .comment:hover, .no-comment:hover, .share:hover {
+.fa-heart:hover, .fa-comment:hover, .group-comments div .fa-share-from-square:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -235,6 +248,17 @@ textarea:focus {
 footer {
     font-size: 1rem;
     font-family: 'Vina Sans', cursive;
+}
+
+.see-co-page, .see-home-page {
+    background-color: black;
+    color: white;
+}
+.see-co-page:hover, .see-home-page:hover {
+    cursor: pointer;
+}
+.co-page, .voir-page-co {
+    display: none;
 }
 
 @media (min-width: 992px) { 
