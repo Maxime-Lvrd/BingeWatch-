@@ -31,3 +31,20 @@ dislike.addEventListener("click", function () {
     dislike.style.display = "none";
     like.style.display = "block";
 });
+
+// comment
+const noComment = document.querySelector(".no-comment");
+const comment = document.querySelector(".comment");
+const comments = document.querySelector(".comments");
+
+noComment.addEventListener("click", function () {
+    comment.style.display = "block";
+    comments.style.display = "block";
+    noComment.style.display = "none";
+});
+
+comment.addEventListener("click", function () {
+    comment.style.display = "none";
+    comments.style.display = "none";
+    noComment.style.display = "block";
+});

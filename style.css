@@ -65,6 +65,10 @@ a {
     border: solid black;
     border-width: 0 0 1px 0;
 }
+.line-post {
+    border: solid rgba(0, 0, 0, 0.2);
+    border-width: 0 0 1px 0;
+}
 .modal-content {
     border-radius: 0;
 }
@@ -98,6 +102,9 @@ a {
 .btn-login:hover {
     color: white;
     background-color: rgb(46, 46, 46)
+}
+.modal-footer div a:hover {
+    color: rgb(81, 175, 164);
 }
 .publish {
     background-color: rgba(128, 128, 128, 0.05);
@@ -150,7 +157,7 @@ textarea:focus {
     text-shadow: 0 1px 0 black;
 }
 .post-text p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 5px 0;
     text-align: justify;
 }
@@ -162,13 +169,36 @@ textarea:focus {
     text-align: end;
     font-size: 0.8rem;
 }
-.fa-heart:hover {
+.fa-heart:hover, .fa-share-from-square:hover, .fa-comment:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 .like {
     display: none;
+}
+.red-like {
     color: brown;
+}
+.like, .dislike {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.comment {
+    display: none;
+    color: rgba(0, 0, 255, 0.7);
+}
+.comments {
+    display: none;
+}
+.post-comment {
+    font-size: 0.8rem;
+    margin: 5px 0;
+    text-align: justify;
+}
+.friend-comment {
+    border: 1px solid black;
+}
+.share {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 .news {
     display: none;
@@ -195,5 +225,28 @@ footer {
     }
     .news {
         display: block;
+    }
+    .carousel-lg {
+        display: block;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 4%;
+    }
+    .carousel-sm {
+        display: none;
+    }
+ }
+
+ @media (max-width: 992px) { 
+    .carousel-lg {
+        display: none;
+    }
+    .carousel-sm {
+        display: block;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 8%;
     }
  }
