@@ -235,9 +235,9 @@ textarea:focus {
     display: none;
 }
 .news-item {
-    height: 10rem;
+    height: 15rem;
     padding: 0.5px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 .news-item:hover {
     transform: scale(1.05);
@@ -259,6 +259,27 @@ footer {
 }
 .co-page, .voir-page-co {
     display: none;
+}
+
+/* PAGE FILMS */
+.filter p {
+    font-weight: bold;
+}
+.film-infos {
+    box-shadow: 0 1px 1px black;
+}
+.film-infos div a, .film-infos div p {
+    padding: 0;
+    margin: 0;
+}
+.film-infos div a {
+    font-weight: bold;
+}
+.infos-film {
+    height: 5rem;
+}
+.img-films {
+    height: 15rem;
 }
 
 @media (min-width: 992px) { 
@@ -294,5 +315,17 @@ footer {
     .friend-picture, .friend-picture-1 {
         height: 2.5rem;
         width: 2.5rem;
+    }
+    .filter {
+        display: none;
+    }
+    .news-item {
+        height: 10rem;
+    }
+    .infos-film a {
+        font-size: 0.9rem;
+    }
+    .infos-film p {
+        font-size: 0.8rem;
     }
  }
