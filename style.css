@@ -265,6 +265,21 @@ footer {
 .filter p {
     font-weight: bold;
 }
+.filter form {
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+.form-check-input {
+    border-color: black;
+}
+.form-check-input:focus {
+    box-shadow: none;
+    border-color: black;
+}
+.form-check-input:checked {
+    background-color: black;
+    border-color: black;
+}
 .film-infos {
     box-shadow: 0 1px 1px black;
 }
@@ -280,6 +295,16 @@ footer {
 }
 .img-films {
     height: 15rem;
+}
+
+.filter-sm div button, .filter-sm div button:hover {
+    border: 1px solid black;
+}
+.filter-sm div ul li form {
+    padding-left: 1rem;
+}
+.filter-sm div ul li p {
+    font-weight: bold;
 }
 
 @media (min-width: 992px) { 
@@ -298,6 +323,12 @@ footer {
     }
     .carousel-sm {
         display: none;
+    }
+    .filter-sm {
+        display: none;
+    }
+    .filter {
+        display: block;
     }
  }
 
@@ -319,6 +350,9 @@ footer {
     .filter {
         display: none;
     }
+    .filter-sm {
+        display: block;
+    }
     .news-item {
         height: 10rem;
     }
@@ -327,5 +361,8 @@ footer {
     }
     .infos-film p {
         font-size: 0.8rem;
+    }
+    .img-films {
+        height: 10rem;
     }
  }
