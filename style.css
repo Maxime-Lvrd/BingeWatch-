@@ -62,6 +62,10 @@ a {
     border: 1px solid black;
     font-family: 'Vina Sans', cursive;
 }
+.category:hover {
+    background-color: black;
+    color: white;
+}
 .nav-link {
     padding-left: 1rem;
     padding-top: 0;
