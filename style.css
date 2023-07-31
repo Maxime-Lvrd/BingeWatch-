@@ -311,6 +311,21 @@ footer {
     font-weight: bold;
 }
 
+/* PAGE FRIENDS */
+.friends {
+    border: 1px solid black;
+}
+.friends div img {
+    height: 7rem;
+}
+.footer-friend {
+    background-color: black;
+    color: white;
+}
+.fa-circle {
+    color: white;
+}
+
 @media (min-width: 576px) { 
     .story {
         height: 7rem;
