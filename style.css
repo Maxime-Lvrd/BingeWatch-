@@ -1,6 +1,30 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+body {
+    position: relative;
+}
 .container-fluid, .row {
     width: 100%;
     margin: 0;
+}
+.wrap {
+    min-height:100%;
+    position: relative;
+}
+.main {
+    padding-bottom: 35px;
+}
+footer {
+    background-color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-family: 'Vina Sans', cursive;
+    width:100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
 }
 .nav {
     font-size: 1.5rem;
@@ -53,6 +77,11 @@ h5 {
     font-family: 'Vina Sans', cursive;
     background-color: black;
     color: white;
+}
+h6 {
+    font-size: 2rem;
+    font-family: 'Vina Sans', cursive;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -248,12 +277,6 @@ textarea:focus {
     opacity: 1;
     cursor: pointer;
 }
-
-footer {
-    font-size: 1rem;
-    font-family: 'Vina Sans', cursive;
-}
-
 .see-co-page, .see-home-page {
     background-color: black;
     color: white;
@@ -326,6 +349,30 @@ footer {
     color: white;
 }
 
+/* PAGE PROFILE */
+.cover-photo {
+    height: 20rem;
+    background-image: url(cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.profile-picturee {
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    height: 10rem;
+    width: 10rem;
+    background-image: url(perceval.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: -20px;
+}
+.publi {
+    border-bottom: 1px solid black;
+}
+
 @media (min-width: 576px) { 
     .story {
         height: 7rem;
@@ -395,5 +442,18 @@ footer {
     }
     .footer-friend p {
         font-size: 0.8rem;
+    }
+    .cover-photo {
+        height: 10rem;
+    }
+    .profile-picturee {
+        height: 7rem;
+        width: 7rem;
+    }
+    .main {
+        padding-bottom: 55px;
+    }
+    footer {
+        height: 55px;
     }
  }

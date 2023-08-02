@@ -3,18 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Binge Watch - Séries</title>
+    <title>Binge Watch</title>
 </head>
 
 <body>
 
     <div class="container-fluid wrap p-0">
 
-        <nav class="navbar container-fluid p-0 mb-0 pt-1 sticky-top">
+        <!-- NAV -->
+        <nav class="navbar container-fluid p-0 pt-1 sticky-top">
+
+            <!-- NAVBAR -->
             <div class="row align-items-center text-center">
                 <div class="col-2">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
@@ -25,14 +29,19 @@
                 <div class="col-8">
                     <h1><a href="index.html">BINGE <i class="fa-solid fa-eye"></i> WATCH</a></h1>
                 </div>
+
+                <!-- BUTTON TRIGGER MODAL -->
                 <div class="col-2 p-0">
-                    <!-- Button trigger modal -->
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i class="fa-solid fa-circle-user fa-lg"></i>
                     </button>
                 </div>
-            </div>
+                <!-- END BUTTON TRIGGER MODAL -->
 
+            </div>
+            <!-- END NAVBAR -->
+
+            <!-- NAV COLLAPSE -->
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <div class="row justify-content-center px-3 pt-1 mb-2">
                     <div class="col-12 line"></div>
@@ -46,12 +55,14 @@
                                     class="position-absolute top-0 start-0 rounded-circle translate-middle badge p-2"><i
                                         class="fa-solid fa-house fa-lg"></i></span>
                             </a>
-                            <a class="active col-10 category my-2 position-relative" aria-current="page" href="profile.html">PROFIL
+                            <a class="active col-10 category my-2 position-relative" aria-current="page"
+                                href="profile.html">PROFIL
                                 <span
                                     class="position-absolute top-0 start-0 rounded-circle translate-middle badge p-2"><i
                                         class="fa-solid fa-circle-user fa-lg"></i></span>
                             </a>
-                            <a class="active col-10 category my-2 position-relative" aria-current="page" href="#">AMIS
+                            <a class="active col-10 category my-2 position-relative" aria-current="page"
+                                href="friends.html">AMIS
                                 <span
                                     class="position-absolute top-0 start-0 rounded-circle translate-middle badge p-2"><i
                                         class="fa-solid fa-user-group fa-lg"></i></span>
@@ -82,13 +93,15 @@
                     </li>
                 </ul>
             </div>
+            <!-- END NAV COLLAPSE -->
 
             <div class="row justify-content-center px-0 pt-1">
                 <div class="col-12 line"></div>
             </div>
         </nav>
+        <!-- END NAV -->
 
-        <!-- Modal -->
+        <!-- MODAL CONNEXION -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -121,7 +134,7 @@
                                 <button type="button" class="btn btn-login">Se connecter</button>
                             </div>
                         </form>
-                        <div class="modal-footer row m-0 p-0 py-1">
+                        <div class="modal-footer row m-0 p-0">
                             <div class="col-12 text-center">
                                 <a href="">Mot de passe oublié ?</a>
                             </div>
@@ -148,7 +161,7 @@
                                 <button type="button" class="btn btn-login">S'inscrire</button>
                             </div>
                         </form>
-                        <div class="modal-footer row m-0 p-0 py-1">
+                        <div class="modal-footer row m-0 p-0">
                             <div class="col-12 text-center">
                                 <a href="">Déjà un compte ? Connectez-vous !</a>
                             </div>
@@ -157,132 +170,138 @@
                 </div>
             </div>
         </div>
+        <!-- END MODAL CONNEXION-->
 
-        <div class="row justify-content-around text-center py-3 main">
+        <!-- HOME PAGE -->
+        <div class="row justify-content-around main">
 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-1">
-                <div class="p-0 friends">
-                    <h5 class="m-0 py-1">ARTHUR</h5>
-                    <div class="row p-2">
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="barbie.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="GoG.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="opp.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="lps.jpg" alt="" srcset="" class="w-100">
-                            </div>
+            <div class="col-md-8 col-12 m-0 p-0 profile">
+                <div class="coucou row p-0 m-0 justify-content-end align-items-center">
+                    <div class="cover-photo col-12"></div>
+                    <div class="col-md-3 col-5">
+                        <div class="row justify-content-end">
+                            <div class="col-12 profile-picturee"></div>
                         </div>
                     </div>
-                    <div class="col-12 footer-friend p-0 py-1">
-                        <p class="m-0">30 amis • 5 en commun</p>
+                    <div class="col-md-9 col-7 px-2">
+                        <h6>PERCEVAL</h6>
+                        <p>27 ami(e)s</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center px-0 mb-3">
+                    <div class="col-12 line"></div>
+                </div>
+                <div class="row p-0 m-0 mb-3 text-center">
+                    <div class="col-3 p-0 py-1 publi">Publications</div>
+                    <div class="col-3 p-0 py-1">Ami(e)s</div>
+                    <div class="col-3 p-0 py-1">Films</div>
+                    <div class="col-3 p-0 py-1">Séries</div>
+                </div>
+                <div class="row justify-content-center mt-1">
+                    <div class="col-12 row px-1">
+                        <div class="col-12 post mb-3 p-0">
+                            <div class="row group-comments">
+                                <div class="col-12 p-1 pseudo">
+                                    <div class="row align-items-center m-0">
+                                        <div class="col-2 col-lg-1 p-0">
+                                            <div class="profile-picture m-auto"></div>
+                                        </div>
+                                        <div class="col-10 col-lg-11">
+                                            <a class="m-0 p-0" href="">Perceval</a>
+                                            <p class="m-0 p-0 hour">23 Juillet 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 post-text">
+                                    <p>
+                                        Faut faire comme avec les scorpions qui se suicident quand ils sont entourés
+                                        par
+                                        le feu, faut faire un feu en forme de cercle,
+                                        autour d'eux, comme ça ils se suicident, pendant que nous on fait le tour et
+                                        on
+                                        lance de la caillaisse de l'autre côté pour brouiller, non ?
+                                    </p>
+                                </div>
+                                <div class="row justify-content-center px-2 pt-1">
+                                    <div class="col-12 line-post"></div>
+                                </div>
+                                <div class="row p-0 py-1 m-0 text-center">
+                                    <div class="col-4 p-0 m-0 dislike">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="col-4 p-0 m-0 like">
+                                        <i class="fa-solid fa-heart red-like"></i>
+                                    </div>
+                                    <div class="col-4 p-0 m-0 no-comment">
+                                        <i class="fa-regular fa-comment"></i>
+                                    </div>
+                                    <div class="col-4 p-0 m-0 comment">
+                                        <i class="fa-solid fa-comment comment"></i>
+                                    </div>
+                                    <div class="col-4 p-0 m-0 share">
+                                        <i class="fa-regular fa-share-from-square"></i>
+                                    </div>
+                                </div>
+                                <div class="comments m-0 p-0">
+                                    <div class="row justify-content-center px-2 pt-1 py-2">
+                                        <div class="col-12 line-post"></div>
+                                    </div>
+                                    <div class="row p-0 m-0">
+                                        <div class="col-lg-2 col-sm-3 col-2">
+                                            <div class="col-2 friend-picture m-auto"></div>
+                                        </div>
+                                        <div class="col-lg-10 col-sm-9 col-10 p-0 px-2 m-0">
+                                            <div class="friend-comment p-0 mb-2">
+                                                <div class="col-12 p-1 pseudo">
+                                                    <div class="row align-items-center m-0 px-2">
+                                                        <a class="m-0 p-0" href="">Arthur</a>
+                                                        <p class="m-0 p-0 hour">23 Juillet 2023</p>
+                                                    </div>
+                                                </div>
+                                                <p class="post-comment px-2">Non, moi je crois qu'il faut que vous
+                                                    arrêtiez d'essayer de dire des trucs... Ca vous fatigue, déjà.
+                                                    Pis
+                                                    pour les autres vous vous
+                                                    rendez pas compte de ce que c'est. Moi, quand vous faites ça, ça
+                                                    me
+                                                    fou une angoisse... Je pourrais vous tuer je crois. De chagrin,
+                                                    hein. Je vous jure, c'est pas bien. Il faut plus que vous
+                                                    parliez
+                                                    avec les gens.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p-0 m-0">
+                                        <div class="col-lg-2 col-sm-3 col-2">
+                                            <div class="col-2 friend-picture-1 m-auto"></div>
+                                        </div>
+                                        <div class="col-lg-10 col-sm-9 col-10 p-0 px-2 m-0">
+                                            <div class="friend-comment p-0 mb-2">
+                                                <div class="col-12 p-1 pseudo">
+                                                    <div class="row align-items-center m-0 px-2">
+                                                        <a class="m-0 p-0" href="">Merlin</a>
+                                                        <p class="m-0 p-0 hour">23 Juillet 2023</p>
+                                                    </div>
+                                                </div>
+                                                <p class="post-comment px-2">Quand vous êtes parti, je me suis dit :
+                                                    Je
+                                                    vais me promener ? Je vais pas
+                                                    me promener ? Finalement j'ai décidé de me beurrer la gueule.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-1">
-                <div class="p-0 friends">
-                    <h5 class="m-0 py-1">MERLIN</h5>
-                    <div class="row p-2">
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="barbie.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="GoG.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="opp.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="lps.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 footer-friend p-0 py-1">
-                        <p class="m-0">27 amis • 8 en commun</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-1">
-                <div class="p-0 friends">
-                    <h5 class="m-0 py-1">BOHORT</h5>
-                    <div class="row p-2">
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="barbie.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="GoG.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="opp.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="lps.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 footer-friend p-0 py-1">
-                        <p class="m-0">22 amis • 16 en commun</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-1">
-                <div class="p-0 friends">
-                    <h5 class="m-0 py-1">GUENIEVRE</h5>
-                    <div class="row p-2">
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="barbie.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="GoG.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="opp.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 p-1">
-                            <div>
-                                <img src="lps.jpg" alt="" srcset="" class="w-100">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 footer-friend p-0 py-1">
-                        <p class="m-0">9 amis • 4 en commun</p>
-                    </div>
-                </div>
-            </div>
-
+            <div class="col-md-4 coucou-1 m-0 p-0"></div>
         </div>
+
+        <!-- END HOME PAGE -->
 
         <footer>
             <div class="row align-items-center text-center">
@@ -300,6 +319,7 @@
                 </div>
             </div>
         </footer>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
