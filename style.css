@@ -393,4 +393,7 @@ footer {
     .news-films, .news-series {
         display: none;
     }
+    .footer-friend p {
+        font-size: 0.8rem;
+    }
  }
