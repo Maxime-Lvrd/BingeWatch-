@@ -70,4 +70,3 @@ seeHomePage.addEventListener("click", function () {
     voirPageCo.style.display = "none";
     kezako.style.display = "block";
 });
-

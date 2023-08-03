@@ -158,8 +158,8 @@ a {
 .profile-picture {
     border-radius: 50%;
     border: 1px solid rgb(255, 255, 255);
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
     background-image: url(perceval.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -371,6 +371,22 @@ textarea:focus {
 }
 .publi {
     border-bottom: 1px solid black;
+}
+.publi, .ami, .film-1, .serie-1 {
+    cursor: pointer;
+}
+.publi:hover, .ami:hover, .film-1:hover, .serie-1:hover {
+    background-color: black;
+    color: white;
+}
+.friend img {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+.friend-border {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
 }
 
 @media (min-width: 576px) { 
