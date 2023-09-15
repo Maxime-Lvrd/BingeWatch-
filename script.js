@@ -1,4 +1,4 @@
-// Inscription - Connexion
+/* Inscription - Connexion */
 const signIn = document.querySelector(".log-in");
 const signUp = document.querySelector(".sign-up");
 const connexion = document.querySelector(".connexion");
@@ -18,7 +18,7 @@ signUp.addEventListener("click", function () {
     inscription.style.display = "block";
 });
 
-// like - dislike 
+/* like - dislike */
 const like = document.querySelector(".like");
 const dislike = document.querySelector(".dislike");
 
@@ -32,7 +32,7 @@ dislike.addEventListener("click", function () {
     like.style.display = "block";
 });
 
-// comment
+/* comment */
 const noComment = document.querySelector(".no-comment");
 const comment = document.querySelector(".comment");
 const comments = document.querySelector(".comments");
@@ -49,7 +49,7 @@ comment.addEventListener("click", function () {
     noComment.style.display = "block";
 });
 
-// home page
+/* home page 
 const seeCoPage = document.querySelector(".see-co-page");
 const seeHomePage = document.querySelector(".see-home-page");
 const kezako = document.querySelector(".kezako");
@@ -69,4 +69,24 @@ seeHomePage.addEventListener("click", function () {
     voirPage.style.display = "block";
     voirPageCo.style.display = "none";
     kezako.style.display = "block";
+}); */
+
+/* Inscription - Connexion 
+const publi = document.querySelector(".publi");
+const ami = document.querySelector(".ami");
+const publication = document.querySelector(".publication");
+const friend = document.querySelector(".friend");
+
+publi.addEventListener("click", function () {
+    ami.style.border = "none";
+    publi.style.borderBottom = "1px solid black";
+    friend.style.display = "none";
+    publication.style.display = "block";
 });
+
+ami.addEventListener("click", function () {
+    publi.style.border = "none";
+    ami.style.borderBottom = "1px solid black";
+    publication.style.display = "none";
+    friend.style.display = "block";
+}); */
